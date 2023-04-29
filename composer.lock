@@ -1,0 +1,78 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d7e82570adac32f89335c0355ebf94d5",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "crypto_scythe/http_generator",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/crypto-scythe/http_generator.git",
+                "reference": "70fb2c4692a58de4df11b6d035465e7ee5b2f814"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/crypto-scythe/http_generator/zipball/70fb2c4692a58de4df11b6d035465e7ee5b2f814",
+                "reference": "70fb2c4692a58de4df11b6d035465e7ee5b2f814",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.7",
+                "vimeo/psalm": "^5.9"
+            },
+            "bin": [
+                "bin/http_generate.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CryptoScythe\\Http\\Generator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Fasel",
+                    "email": "crypto.scythe@gmail.com"
+                }
+            ],
+            "description": "HTTP header fields, media types and status codes",
+            "keywords": [
+                "code",
+                "header",
+                "headers",
+                "http",
+                "media",
+                "status",
+                "type"
+            ],
+            "support": {
+                "issues": "https://github.com/crypto-scythe/http_generator/issues",
+                "source": "https://github.com/crypto-scythe/http_generator/tree/2.0.0"
+            },
+            "time": "2023-04-29T18:25:10+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.1"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

@@ -1,0 +1,32 @@
+{
+    "name": "crypto_scythe/http",
+    "version": "1.0.0",
+    "description": "PHP convenience classes for HTTP header fields, media types and status codes",
+    "license": "MIT",
+    "keywords": [
+        "http",
+        "header",
+        "headers",
+        "status",
+        "code",
+        "media",
+        "type"
+    ],
+    "authors": [
+        {
+            "name": "Chris Fasel",
+            "email": "crypto.scythe@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CryptoScythe\\Http\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "crypto_scythe/http_generator": "^2.0"
+    }
+}
