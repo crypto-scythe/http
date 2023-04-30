@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CryptoScythe\Http;
+namespace CryptoScytheHttp;
 
 /**
  * Class StatusCodes
@@ -12,7 +12,7 @@ namespace CryptoScythe\Http;
  */
 final class StatusCodes {
     /**
-     * Status 100
+     * Status code 100
      *
      * The 100 (Continue) status code indicates that the initial part of a request has been received and has not yet
      * been rejected by the server. The server intends to send a final response after the request has been fully
@@ -27,7 +27,7 @@ final class StatusCodes {
     public const MESSAGE_CONTINUE = self::MESSAGE_100;
 
     /**
-     * Status 101
+     * Status code 101
      *
      * The 101 (Switching Protocols) status code indicates that the server understands and is willing to comply with
      * the client's request, via the Upgrade header field, for a change in the application protocol being used on
@@ -43,7 +43,7 @@ final class StatusCodes {
     public const MESSAGE_SWITCHING_PROTOCOLS = self::MESSAGE_101;
 
     /**
-     * Status 102
+     * Status code 102
      *
      * The 102 (Processing) status code is an interim response used to inform the client that the server has
      * accepted the complete request, but has not yet completed it. This status code SHOULD only be sent when the
@@ -61,7 +61,7 @@ final class StatusCodes {
     public const MESSAGE_PROCESSING = self::MESSAGE_102;
 
     /**
-     * Status 103
+     * Status code 103
      *
      * The 103 (Early Hints) status code indicates the client that the server is likely to send a final request with
      * the headers included in the informational response.
@@ -75,7 +75,7 @@ final class StatusCodes {
     public const MESSAGE_EARLY_HINTS = self::MESSAGE_103;
 
     /**
-     * Status 200
+     * Status code 200
      *
      * The 200 (OK) status code indicates that the request has succeeded. The payload sent in a 200 response depends
      * on the request method.
@@ -89,7 +89,7 @@ final class StatusCodes {
     public const MESSAGE_OK = self::MESSAGE_200;
 
     /**
-     * Status 201
+     * Status code 201
      *
      * The 201 (Created) status code indicates that the request has been fulfilled and has resulted in one or more
      * new resources being created. The primary resource created by the request is identified by either a Location
@@ -104,7 +104,7 @@ final class StatusCodes {
     public const MESSAGE_CREATED = self::MESSAGE_201;
 
     /**
-     * Status 202
+     * Status code 202
      *
      * The 202 (Accepted) status code indicates that the request has been accepted for processing, but the
      * processing has not been completed. The request might or might not eventually be acted upon, as it might be
@@ -120,7 +120,7 @@ final class StatusCodes {
     public const MESSAGE_ACCEPTED = self::MESSAGE_202;
 
     /**
-     * Status 203
+     * Status code 203
      *
      * The 203 (Non-Authoritative Information) status code indicates that the request was successful but the
      * enclosed payload has been modified from that of the origin server's 200 (OK) response by a transforming
@@ -135,7 +135,7 @@ final class StatusCodes {
     public const MESSAGE_NON_AUTHORITATIVE_INFORMATION = self::MESSAGE_203;
 
     /**
-     * Status 204
+     * Status code 204
      *
      * The 204 (No Content) status code indicates that the server has successfully fulfilled the request and that
      * there is no additional content to send in the response payload body. Metadata in the response header fields
@@ -150,7 +150,7 @@ final class StatusCodes {
     public const MESSAGE_NO_CONTENT = self::MESSAGE_204;
 
     /**
-     * Status 205
+     * Status code 205
      *
      * The 205 (Reset Content) status code indicates that the server has fulfilled the request and desires that the
      * user agent reset the "document view", which caused the request to be sent, to its original state as received
@@ -165,7 +165,7 @@ final class StatusCodes {
     public const MESSAGE_RESET_CONTENT = self::MESSAGE_205;
 
     /**
-     * Status 206
+     * Status code 206
      *
      * The 206 (Partial Content) status code indicates that the server is successfully fulfilling a range request
      * for the target resource by transferring one or more parts of the selected representation that correspond to
@@ -180,7 +180,7 @@ final class StatusCodes {
     public const MESSAGE_PARTIAL_CONTENT = self::MESSAGE_206;
 
     /**
-     * Status 207
+     * Status code 207
      *
      * The 207 (Multi-Status) status code provides status for multiple independent operations.
      *
@@ -193,7 +193,7 @@ final class StatusCodes {
     public const MESSAGE_MULTI_STATUS = self::MESSAGE_207;
 
     /**
-     * Status 208
+     * Status code 208
      *
      * The 208 (Already Reported) status code can be used inside a DAV: propstat response element to avoid
      * enumerating the internal members of multiple bindings to the same collection repeatedly. For each binding to
@@ -210,7 +210,7 @@ final class StatusCodes {
     public const MESSAGE_ALREADY_REPORTED = self::MESSAGE_208;
 
     /**
-     * Status 226
+     * Status code 226
      *
      * The server has fulfilled a GET request for the resource, and the response is a representation of the result
      * of one or more instance-manipulations applied to the current instance. The actual current instance might not
@@ -226,7 +226,7 @@ final class StatusCodes {
     public const MESSAGE_IM_USED = self::MESSAGE_226;
 
     /**
-     * Status 300
+     * Status code 300
      *
      * The 300 (Multiple Choices) status code indicates that the target resource has more than one representation,
      * each with its own more specific identifier, and information about the alternatives is being provided so that
@@ -243,7 +243,7 @@ final class StatusCodes {
     public const MESSAGE_MULTIPLE_CHOICES = self::MESSAGE_300;
 
     /**
-     * Status 301
+     * Status code 301
      *
      * The 301 (Moved Permanently) status code indicates that the target resource has been assigned a new permanent
      * URI and any future references to this resource ought to use one of the enclosed URIs. Clients with
@@ -259,7 +259,7 @@ final class StatusCodes {
     public const MESSAGE_MOVED_PERMANENTLY = self::MESSAGE_301;
 
     /**
-     * Status 302
+     * Status code 302
      *
      * The 302 (Found) status code indicates that the target resource resides temporarily under a different URI.
      * Since the redirection might be altered on occasion, the client ought to continue to use the effective request
@@ -274,7 +274,7 @@ final class StatusCodes {
     public const MESSAGE_FOUND = self::MESSAGE_302;
 
     /**
-     * Status 303
+     * Status code 303
      *
      * The 303 (See Other) status code indicates that the server is redirecting the user agent to a different
      * resource, as indicated by a URI in the Location header field, which is intended to provide an indirect
@@ -292,7 +292,7 @@ final class StatusCodes {
     public const MESSAGE_SEE_OTHER = self::MESSAGE_303;
 
     /**
-     * Status 304
+     * Status code 304
      *
      * The 304 (Not Modified) status code indicates that a conditional GET or HEAD request has been received and
      * would have resulted in a 200 (OK) response if it were not for the fact that the condition evaluated to false.
@@ -310,7 +310,7 @@ final class StatusCodes {
     public const MESSAGE_NOT_MODIFIED = self::MESSAGE_304;
 
     /**
-     * Status 305
+     * Status code 305
      *
      * The 305 (Use Proxy) status code was defined in a previous version of HTTP/1.1 and is now deprecated.
      *
@@ -323,7 +323,7 @@ final class StatusCodes {
     public const MESSAGE_USE_PROXY = self::MESSAGE_305;
 
     /**
-     * Status 306
+     * Status code 306
      *
      * The 306 status code was defined in a previous version of HTTP/1.1, is no longer used, and the code is
      * reserved.
@@ -337,7 +337,7 @@ final class StatusCodes {
     public const MESSAGE_UNUSED = self::MESSAGE_306;
 
     /**
-     * Status 307
+     * Status code 307
      *
      * The 307 (Temporary Redirect) status code indicates that the target resource resides temporarily under a
      * different URI and the user agent MUST NOT change the request method if it performs an automatic redirection
@@ -353,7 +353,7 @@ final class StatusCodes {
     public const MESSAGE_TEMPORARY_REDIRECT = self::MESSAGE_307;
 
     /**
-     * Status 308
+     * Status code 308
      *
      * The 308 (Permanent Redirect) status code indicates that the target resource has been assigned a new permanent
      * URI and any future references to this resource ought to use one of the enclosed URIs.
@@ -367,7 +367,7 @@ final class StatusCodes {
     public const MESSAGE_PERMANENT_REDIRECT = self::MESSAGE_308;
 
     /**
-     * Status 400
+     * Status code 400
      *
      * The 400 (Bad Request) status code indicates that the server cannot or will not process the request due to
      * something that is perceived to be a client error (e.g., malformed request syntax, invalid request message
@@ -382,7 +382,7 @@ final class StatusCodes {
     public const MESSAGE_BAD_REQUEST = self::MESSAGE_400;
 
     /**
-     * Status 401
+     * Status code 401
      *
      * The 401 (Unauthorized) status code indicates that the request has not been applied because it lacks valid
      * authentication credentials for the target resource. The server generating a 401 response MUST send a
@@ -398,7 +398,7 @@ final class StatusCodes {
     public const MESSAGE_UNAUTHORIZED = self::MESSAGE_401;
 
     /**
-     * Status 402
+     * Status code 402
      *
      * The 402 (Payment Required) status code is reserved for future use.
      *
@@ -411,7 +411,7 @@ final class StatusCodes {
     public const MESSAGE_PAYMENT_REQUIRED = self::MESSAGE_402;
 
     /**
-     * Status 403
+     * Status code 403
      *
      * The 403 (Forbidden) status code indicates that the server understood the request but refuses to authorize it.
      * A server that wishes to make public why the request has been forbidden can describe that reason in the
@@ -426,7 +426,7 @@ final class StatusCodes {
     public const MESSAGE_FORBIDDEN = self::MESSAGE_403;
 
     /**
-     * Status 404
+     * Status code 404
      *
      * The 404 (Not Found) status code indicates that the origin server did not find a current representation for
      * the target resource or is not willing to disclose that one exists. A 404 status code does not indicate
@@ -443,7 +443,7 @@ final class StatusCodes {
     public const MESSAGE_NOT_FOUND = self::MESSAGE_404;
 
     /**
-     * Status 405
+     * Status code 405
      *
      * The 405 (Method Not Allowed) status code indicates that the method received in the request-line is known by
      * the origin server but not supported by the target resource. The origin server MUST generate an Allow header
@@ -458,7 +458,7 @@ final class StatusCodes {
     public const MESSAGE_METHOD_NOT_ALLOWED = self::MESSAGE_405;
 
     /**
-     * Status 406
+     * Status code 406
      *
      * The 406 (Not Acceptable) status code indicates that the target resource does not have a current
      * representation that would be acceptable to the user agent, according to the proactive negotiation header
@@ -473,7 +473,7 @@ final class StatusCodes {
     public const MESSAGE_NOT_ACCEPTABLE = self::MESSAGE_406;
 
     /**
-     * Status 407
+     * Status code 407
      *
      * The 407 (Proxy Authentication Required) status code is similar to 401 (Unauthorized), but it indicates that
      * the client needs to authenticate itself in order to use a proxy. The proxy MUST send a Proxy-Authenticate
@@ -489,7 +489,7 @@ final class StatusCodes {
     public const MESSAGE_PROXY_AUTHENTICATION_REQUIRED = self::MESSAGE_407;
 
     /**
-     * Status 408
+     * Status code 408
      *
      * The 408 (Request Timeout) status code indicates that the server did not receive a complete request message
      * within the time that it was prepared to wait. A server SHOULD send the "close" connection option in the
@@ -505,7 +505,7 @@ final class StatusCodes {
     public const MESSAGE_REQUEST_TIMEOUT = self::MESSAGE_408;
 
     /**
-     * Status 409
+     * Status code 409
      *
      * The 409 (Conflict) status code indicates that the request could not be completed due to a conflict with the
      * current state of the target resource. This code is used in situations where the user might be able to resolve
@@ -521,7 +521,7 @@ final class StatusCodes {
     public const MESSAGE_CONFLICT = self::MESSAGE_409;
 
     /**
-     * Status 410
+     * Status code 410
      *
      * The 410 (Gone) status code indicates that access to the target resource is no longer available at the origin
      * server and that this condition is likely to be permanent. If the origin server does not know, or has no
@@ -537,7 +537,7 @@ final class StatusCodes {
     public const MESSAGE_GONE = self::MESSAGE_410;
 
     /**
-     * Status 411
+     * Status code 411
      *
      * The 411 (Length Required) status code indicates that the server refuses to accept the request without a
      * defined Content-Length. The client MAY repeat the request if it adds a valid Content-Length header field
@@ -552,7 +552,7 @@ final class StatusCodes {
     public const MESSAGE_LENGTH_REQUIRED = self::MESSAGE_411;
 
     /**
-     * Status 412
+     * Status code 412
      *
      * The 412 (Precondition Failed) status code indicates that one or more conditions given in the request header
      * fields evaluated to false when tested on the server. This response code allows the client to place
@@ -568,7 +568,7 @@ final class StatusCodes {
     public const MESSAGE_PRECONDITION_FAILED = self::MESSAGE_412;
 
     /**
-     * Status 413
+     * Status code 413
      *
      * The 413 (Payload Too Large) status code indicates that the server is refusing to process a request because
      * the request payload is larger than the server is willing or able to process. The server MAY close the
@@ -583,7 +583,7 @@ final class StatusCodes {
     public const MESSAGE_PAYLOAD_TOO_LARGE = self::MESSAGE_413;
 
     /**
-     * Status 414
+     * Status code 414
      *
      * The 414 (URI Too Long) status code indicates that the server is refusing to service the request because the
      * request-target is longer than the server is willing to interpret.
@@ -597,7 +597,7 @@ final class StatusCodes {
     public const MESSAGE_URI_TOO_LONG = self::MESSAGE_414;
 
     /**
-     * Status 415
+     * Status code 415
      *
      * The 415 (Unsupported Media Type) status code indicates that the origin server is refusing to service the
      * request because the payload is in a format not supported by this method on the target resource. The format
@@ -613,7 +613,7 @@ final class StatusCodes {
     public const MESSAGE_UNSUPPORTED_MEDIA_TYPE = self::MESSAGE_415;
 
     /**
-     * Status 416
+     * Status code 416
      *
      * The 416 (Range Not Satisfiable) status code indicates that none of the ranges in the request's Range header
      * field (Section 3.1) overlap the current extent of the selected resource or that the set of ranges requested
@@ -628,7 +628,7 @@ final class StatusCodes {
     public const MESSAGE_RANGE_NOT_SATISFIABLE = self::MESSAGE_416;
 
     /**
-     * Status 417
+     * Status code 417
      *
      * The 417 (Expectation Failed) status code indicates that the expectation given in the request's Expect header
      * field could not be met by at least one of the inbound servers.
@@ -642,7 +642,7 @@ final class StatusCodes {
     public const MESSAGE_EXPECTATION_FAILED = self::MESSAGE_417;
 
     /**
-     * Status 418
+     * Status code 418
      *
      * Any attempt to brew coffee with a teapot should result in the error code "418 I'm a teapot". The resulting
      * entity body MAY be short and stout.
@@ -656,7 +656,7 @@ final class StatusCodes {
     public const MESSAGE_I_M_A_TEAPOT = self::MESSAGE_418;
 
     /**
-     * Status 421
+     * Status code 421
      *
      * The 421 (Misdirected Request) status code indicates that the request was directed at a server that is not
      * able to produce a response. This can be sent by a server that is not configured to produce responses for the
@@ -671,7 +671,7 @@ final class StatusCodes {
     public const MESSAGE_MISDIRECTED_REQUEST = self::MESSAGE_421;
 
     /**
-     * Status 422
+     * Status code 422
      *
      * The 422 (Unprocessable Entity) status code means the server understands the content type of the request
      * entity (hence a 415 (Unsupported Media Type) status code is inappropriate), and the syntax of the request
@@ -688,7 +688,7 @@ final class StatusCodes {
     public const MESSAGE_UNPROCESSABLE_ENTITY = self::MESSAGE_422;
 
     /**
-     * Status 423
+     * Status code 423
      *
      * The 423 (Locked) status code means the source or destination resource of a method is locked. This response
      * SHOULD contain an appropriate precondition or postcondition code, such as 'lock-token-submitted' or
@@ -703,7 +703,7 @@ final class StatusCodes {
     public const MESSAGE_LOCKED = self::MESSAGE_423;
 
     /**
-     * Status 424
+     * Status code 424
      *
      * The 424 (Failed Dependency) status code means that the method could not be performed on the resource because
      * the requested action depended on another action and that action failed. For example, if a command in a
@@ -719,7 +719,7 @@ final class StatusCodes {
     public const MESSAGE_FAILED_DEPENDENCY = self::MESSAGE_424;
 
     /**
-     * Status 425
+     * Status code 425
      *
      * A 425 (Too Early) status code indicates that the server is unwilling to risk processing a request that might
      * be replayed. User agents that send a request in early data are expected to retry the request when receiving a
@@ -735,7 +735,7 @@ final class StatusCodes {
     public const MESSAGE_TOO_EARLY = self::MESSAGE_425;
 
     /**
-     * Status 426
+     * Status code 426
      *
      * The 426 (Upgrade Required) status code indicates that the server refuses to perform the request using the
      * current protocol but might be willing to do so after the client upgrades to a different protocol. The server
@@ -750,7 +750,7 @@ final class StatusCodes {
     public const MESSAGE_UPGRADE_REQUIRED = self::MESSAGE_426;
 
     /**
-     * Status 428
+     * Status code 428
      *
      * The 428 status code indicates that the origin server requires the request to be conditional.
      *
@@ -763,7 +763,7 @@ final class StatusCodes {
     public const MESSAGE_PRECONDITION_REQUIRED = self::MESSAGE_428;
 
     /**
-     * Status 429
+     * Status code 429
      *
      * The 429 status code indicates that the user has sent too many requests in a given amount of time ("rate
      * limiting").
@@ -777,7 +777,7 @@ final class StatusCodes {
     public const MESSAGE_TOO_MANY_REQUESTS = self::MESSAGE_429;
 
     /**
-     * Status 431
+     * Status code 431
      *
      * The 431 status code indicates that the server is unwilling to process the request because its header fields
      * are too large. The request MAY be resubmitted after reducing the size of the request header fields.
@@ -791,7 +791,7 @@ final class StatusCodes {
     public const MESSAGE_REQUEST_HEADER_FIELDS_TOO_LARGE = self::MESSAGE_431;
 
     /**
-     * Status 451
+     * Status code 451
      *
      * This status code indicates that the server is denying access to the resource as a consequence of a legal
      * demand. The server in question might not be an origin server. This type of legal demand typically most
@@ -806,7 +806,7 @@ final class StatusCodes {
     public const MESSAGE_UNAVAILABLE_FOR_LEGAL_REASONS = self::MESSAGE_451;
 
     /**
-     * Status 500
+     * Status code 500
      *
      * The 500 (Internal Server Error) status code indicates that the server encountered an unexpected condition
      * that prevented it from fulfilling the request.
@@ -820,7 +820,7 @@ final class StatusCodes {
     public const MESSAGE_INTERNAL_SERVER_ERROR = self::MESSAGE_500;
 
     /**
-     * Status 501
+     * Status code 501
      *
      * The 501 (Not Implemented) status code indicates that the server does not support the functionality required
      * to fulfill the request. This is the appropriate response when the server does not recognize the request
@@ -835,7 +835,7 @@ final class StatusCodes {
     public const MESSAGE_NOT_IMPLEMENTED = self::MESSAGE_501;
 
     /**
-     * Status 502
+     * Status code 502
      *
      * The 502 (Bad Gateway) status code indicates that the server, while acting as a gateway or proxy, received an
      * invalid response from an inbound server it accessed while attempting to fulfill the request.
@@ -849,7 +849,7 @@ final class StatusCodes {
     public const MESSAGE_BAD_GATEWAY = self::MESSAGE_502;
 
     /**
-     * Status 503
+     * Status code 503
      *
      * The 503 (Service Unavailable) status code indicates that the server is currently unable to handle the request
      * due to a temporary overload or scheduled maintenance, which will likely be alleviated after some delay. The
@@ -865,7 +865,7 @@ final class StatusCodes {
     public const MESSAGE_SERVICE_UNAVAILABLE = self::MESSAGE_503;
 
     /**
-     * Status 504
+     * Status code 504
      *
      * The 504 (Gateway Timeout) status code indicates that the server, while acting as a gateway or proxy, did not
      * receive a timely response from an upstream server it needed to access in order to complete the request.
@@ -879,7 +879,7 @@ final class StatusCodes {
     public const MESSAGE_GATEWAY_TIMEOUT = self::MESSAGE_504;
 
     /**
-     * Status 505
+     * Status code 505
      *
      * The 505 (HTTP Version Not Supported) status code indicates that the server does not support, or refuses to
      * support, the major version of HTTP that was used in the request message. The server is indicating that it is
@@ -896,7 +896,7 @@ final class StatusCodes {
     public const MESSAGE_HTTP_VERSION_NOT_SUPPORTED = self::MESSAGE_505;
 
     /**
-     * Status 506
+     * Status code 506
      *
      * The 506 status code indicates that the server has an internal configuration error: the chosen variant
      * resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end
@@ -911,7 +911,7 @@ final class StatusCodes {
     public const MESSAGE_VARIANT_ALSO_NEGOTIATES = self::MESSAGE_506;
 
     /**
-     * Status 507
+     * Status code 507
      *
      * The 507 (Insufficient Storage) status code means the method could not be performed on the resource because
      * the server is unable to store the representation needed to successfully complete the request. This condition
@@ -927,7 +927,7 @@ final class StatusCodes {
     public const MESSAGE_INSUFFICIENT_STORAGE = self::MESSAGE_507;
 
     /**
-     * Status 508
+     * Status code 508
      *
      * The 508 (Loop Detected) status code indicates that the server terminated an operation because it encountered
      * an infinite loop while processing a request with "Depth: infinity". This status indicates that the entire
@@ -942,7 +942,7 @@ final class StatusCodes {
     public const MESSAGE_LOOP_DETECTED = self::MESSAGE_508;
 
     /**
-     * Status 510
+     * Status code 510
      *
      * The policy for accessing the resource has not been met in the request. The server should send back all the
      * information necessary for the client to issue an extended request. It is outside the scope of this
@@ -957,7 +957,7 @@ final class StatusCodes {
     public const MESSAGE_NOT_EXTENDED = self::MESSAGE_510;
 
     /**
-     * Status 511
+     * Status code 511
      *
      * The 511 status code indicates that the client needs to authenticate to gain network access.
      *

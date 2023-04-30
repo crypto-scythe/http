@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CryptoScythe\Http;
+namespace CryptoScytheHttp;
 
 /**
  * Class MediaTypes

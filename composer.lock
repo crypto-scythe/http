@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7e82570adac32f89335c0355ebf94d5",
+    "content-hash": "5572296d50fdbc3e22fed8d497ba53d9",
     "packages": [],
     "packages-dev": [
         {
             "name": "crypto_scythe/http_generator",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/crypto-scythe/http_generator.git",
-                "reference": "70fb2c4692a58de4df11b6d035465e7ee5b2f814"
+                "reference": "19e24d4e03fce2a28a67d9ae6d5a17d34b450707"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crypto-scythe/http_generator/zipball/70fb2c4692a58de4df11b6d035465e7ee5b2f814",
-                "reference": "70fb2c4692a58de4df11b6d035465e7ee5b2f814",
+                "url": "https://api.github.com/repos/crypto-scythe/http_generator/zipball/19e24d4e03fce2a28a67d9ae6d5a17d34b450707",
+                "reference": "19e24d4e03fce2a28a67d9ae6d5a17d34b450707",
                 "shasum": ""
             },
             "require": {
@@ -60,9 +60,9 @@
             ],
             "support": {
                 "issues": "https://github.com/crypto-scythe/http_generator/issues",
-                "source": "https://github.com/crypto-scythe/http_generator/tree/2.0.0"
+                "source": "https://github.com/crypto-scythe/http_generator/tree/2.1.0"
             },
-            "time": "2023-04-29T18:25:10+00:00"
+            "time": "2023-04-30T07:35:44+00:00"
         }
     ],
     "aliases": [],
