@@ -640,8 +640,8 @@ final class HeaderFields {
      * The Content-Digest HTTP field can be used in requests and responses to communicate digests that are
      * calculated using a hashing algorithm applied to the actual message content.
      *
-     * @see https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-digest-headers
-     * @see https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers#section-2
+     * @see https://webconcepts.info/specs/IETF/RFC/9530
+     * @see https://datatracker.ietf.org/doc/html/rfc9530#section-2
      */
     public const CONTENT_DIGEST = 'Content-Digest';
 
@@ -730,16 +730,16 @@ final class HeaderFields {
     /**
      * Header field Content-Security-Policy
      *
+     * The Content-Security-Policy header field is the preferred mechanism for delivering a policy.
+     *
+     * @see https://webconcepts.info/specs/W3C/TR/CSP2
+     * @see https://www.w3.org/TR/CSP2/#content-security-policy-header-field
+     * 
      * The Content-Security-Policy HTTP response header field is the preferred mechanism for delivering a policy
      * from a server to a client.
      *
      * @see https://webconcepts.info/specs/W3C/TR/CSP3
      * @see https://www.w3.org/TR/CSP3/#csp-header
-     * 
-     * The Content-Security-Policy header field is the preferred mechanism for delivering a policy.
-     *
-     * @see https://webconcepts.info/specs/W3C/TR/CSP2
-     * @see https://www.w3.org/TR/CSP2/#content-security-policy-header-field
      */
     public const CONTENT_SECURITY_POLICY = 'Content-Security-Policy';
 
@@ -758,17 +758,17 @@ final class HeaderFields {
     /**
      * Header field Content-Security-Policy-Report-Only
      *
-     * The Content-Security-Policy-Report-Only HTTP response header field allows web developers to experiment with
-     * policies by monitoring (but not enforcing) their effects.
-     *
-     * @see https://webconcepts.info/specs/W3C/TR/CSP3
-     * @see https://www.w3.org/TR/CSP3/#cspro-header
-     * 
      * The Content-Security-Policy-Report-Only header field lets servers experiment with policies by monitoring
      * (rather than enforcing) a policy.
      *
      * @see https://webconcepts.info/specs/W3C/TR/CSP2
      * @see https://www.w3.org/TR/CSP2/#content-security-policy-report-only-header-field
+     * 
+     * The Content-Security-Policy-Report-Only HTTP response header field allows web developers to experiment with
+     * policies by monitoring (but not enforcing) their effects.
+     *
+     * @see https://webconcepts.info/specs/W3C/TR/CSP3
+     * @see https://www.w3.org/TR/CSP3/#cspro-header
      */
     public const CONTENT_SECURITY_POLICY_REPORT_ONLY = 'Content-Security-Policy-Report-Only';
 
@@ -1345,12 +1345,12 @@ final class HeaderFields {
     /**
      * Header field Link-Template
      *
-     * The Link-Template header field provides a means for serialising one or more links into HTTP message metadata.
-     * It is semantically equivalent to the Link header field defined in Section 3 of "Web Linking", except that it
-     * uses URI Templates to convey the structure of links.
+     * The Link-Template header field is a Structured Field that serializes one or more links into HTTP message
+     * metadata. It is semantically equivalent to the Link header field defined in Section 3 of Web Linking, except
+     * that the link target and link anchor can contain URI Templates.
      *
-     * @see https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-link-template
-     * @see https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-link-template#section-2
+     * @see https://webconcepts.info/specs/IETF/RFC/9652
+     * @see https://datatracker.ietf.org/doc/html/rfc9652#name-the-link-template-header-fi
      */
     public const LINK_TEMPLATE = 'Link-Template';
 
@@ -1948,8 +1948,8 @@ final class HeaderFields {
      * The Repr-Digest HTTP field can be used in requests and responses to communicate digests that are calculated
      * using a hashing algorithm applied to the entire selected representation data.
      *
-     * @see https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-digest-headers
-     * @see https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers#section-3
+     * @see https://webconcepts.info/specs/IETF/RFC/9530
+     * @see https://datatracker.ietf.org/doc/html/rfc9530#section-3
      */
     public const REPR_DIGEST = 'Repr-Digest';
 
@@ -2625,11 +2625,11 @@ final class HeaderFields {
     /**
      * Header field Want-Content-Digest
      *
-     * Want-Content-Digest indicates that the sender would like to receive a content digest on messages associated
-     * with the request URI and representation metadata, using the Content-Digest field.
+     * Want-Content-Digest indicates that the sender would like to receive (via the Content-Digest field) a content
+     * digest on messages associated with the request URI and representation metadata.
      *
-     * @see https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-digest-headers
-     * @see https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers#section-4
+     * @see https://webconcepts.info/specs/IETF/RFC/9530
+     * @see https://datatracker.ietf.org/doc/html/rfc9530#section-4
      */
     public const WANT_CONTENT_DIGEST = 'Want-Content-Digest';
 
@@ -2647,11 +2647,11 @@ final class HeaderFields {
     /**
      * Header field Want-Repr-Digest
      *
-     * Want-Repr-Digest indicates that the sender would like to receive a representation digest on messages
-     * associated with the request URI and representation metadata, using the Repr-Digest field.
+     * Want-Repr-Digest indicates that the sender would like to receive (via the Repr-Digest field) a representation
+     * digest on messages associated with the request URI and representation metadata.
      *
-     * @see https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-digest-headers
-     * @see https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers#section-4
+     * @see https://webconcepts.info/specs/IETF/RFC/9530
+     * @see https://datatracker.ietf.org/doc/html/rfc9530#section-4
      */
     public const WANT_REPR_DIGEST = 'Want-Repr-Digest';
 
@@ -2701,4 +2701,38 @@ final class HeaderFields {
      * @see https://www.w3.org/TR/trace-context/#tracestate-field
      */
     public const TRACESTATE = 'tracestate';
+
+    /**
+     * Header field webhook-id
+     *
+     * The unique webhook identifier.
+     *
+     * @see https://webconcepts.info/specs/Webhook/standard/webhooks
+     * @see https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md#webhook-headers-sending-metadata-to-consumers
+     */
+    public const WEBHOOK_ID = 'webhook-id';
+
+    /**
+     * Header field webhook-signature
+     *
+     * The signature header is a space delimited list of signatures associated with this webhook. The reason it is a
+     * list, and not just one signature is to support zero downtime secret rotation. The secret key used for the
+     * signature should not be changed under normal circumstances, but it may be required that it does change under
+     * some circumstances (e.g. compromise). Supporting zero downtime secret rotation means that webhook operations
+     * won't be affected during the secret rotation process.
+     *
+     * @see https://webconcepts.info/specs/Webhook/standard/webhooks
+     * @see https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md#webhook-headers-sending-metadata-to-consumers
+     */
+    public const WEBHOOK_SIGNATURE = 'webhook-signature';
+
+    /**
+     * Header field webhook-timestamp
+     *
+     * Integer unix timestamp (seconds since epoch).
+     *
+     * @see https://webconcepts.info/specs/Webhook/standard/webhooks
+     * @see https://github.com/standard-webhooks/standard-webhooks/blob/main/spec/standard-webhooks.md#webhook-headers-sending-metadata-to-consumers
+     */
+    public const WEBHOOK_TIMESTAMP = 'webhook-timestamp';
 }

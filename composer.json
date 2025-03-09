@@ -1,6 +1,6 @@
 {
     "name": "crypto_scythe/http",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "PHP convenience classes for HTTP header fields, media types and status codes",
     "license": "MIT",
     "keywords": [

@@ -1036,10 +1036,11 @@ final class MediaTypes {
     /**
      * Media type application/yaml
      *
-     * YAML is a data serialization format that is widely used on the Internet.
+     * YAML is a data serialization format that is capable of conveying one or multiple documents in a single
+     * presentation stream (e.g., a file or a network resource). The media type for YAML is application/yaml
      *
-     * @see https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-yaml-mediatypes
-     * @see https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-yaml-mediatypes#section-2.1
+     * @see https://webconcepts.info/specs/IETF/RFC/9512
+     * @see https://datatracker.ietf.org/doc/html/rfc9512#section-2.1
      */
     public const APPLICATION_YAML = 'application/yaml';
 
